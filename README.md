@@ -1,7 +1,7 @@
 tailscale-exporter
 ==================
 
-Prometheus Metrics and Metadata via the Tailscale API.
+Prometheus Metrics and Metadata via the [Tailscale API](https://github.com/tailscale/tailscale/blob/main/api.md).
 
 Requires a Tailscale API Token available from the Management Web UI under Keys -> API Key -> "Generate One-off key"
 
