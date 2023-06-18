@@ -7,7 +7,7 @@ COPY *.go ./
 RUN go build -o /tailscale-exporter
 
 # second stage for running
-FROM prom/busybox:glibc
+FROM alpine:3.18.2
 COPY --from=0 /tailscale-exporter /usr/local/bin/tailscale-exporter
 EXPOSE 8080
 ENTRYPOINT [ "/usr/local/bin/tailscale-exporter" ]
